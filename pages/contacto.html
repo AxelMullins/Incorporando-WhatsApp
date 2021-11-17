@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incorporando WhatsApp</title>
+
+    <!-- Link css local -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Fav icon (Icono en pesaña del navegador) -->
+    <link rel="shortcut icon" href="../img/logo-whatsapp.png" type="image/x-icon">
+
+    <!-- Link Google Fonts - Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CDN Fontawesome (Para iconos) -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="navbarWsp" aria-label="Barra de navegacion">
+            <div class="container-xl justify-content-center my-2">
+                <a class="navbar-brand ms-2" href="../index.html">
+                    <img src="../img/logo-whatsapp.png" alt="" width="auto" height="70">
+                    WhatsApp
+                </a>
+
+                <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="contacto.html" class="text-decoration-none">
+                                <button type="button" class="btn btn-whatsapp d-grid gap-2 col-6 col-lg-12 mx-auto">
+                                    Contacto
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Form Whatsapp -->
+        <div class="container-fluid bg-light py-md-5">
+            <div class="container-xl pt-3">
+                <h3 class="pb-2 border-bottom">Contacto</h3>
+                <div class="row py-3 d-flex align-items-center">
+
+                    <form class="col-12 col-md-6 p-md-5 fw-1" id="form__contacto">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="phone" placeholder="Teléfono">
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="opciones">
+                                <option selected>Seleccionar</option>
+                                <option value="Opción 1">Opción 1</option>
+                                <option value="Opción 2">Opción 2</option>
+                                <option value="Opción 3">Opción 3</option>
+                            </select>
+                            <label for="modelo">Opciones</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="range" class="form-label">Rango</label>
+                            <input type="range" class="form-range" min="0" max="5" step="1" id="range">
+                        </div>                        
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Daja tu comentario" id="message"
+                                style="height: 100px; resize: none;"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="check">
+                            <label class="form-check-label" for="check">
+                                Quiero recibir noticias
+                            </label>
+                        </div>
+                        <input type="submit" name="submit"
+                            class="form-control btn mb-3" value="Contactar por whatsapp" />
+                    </form>
+
+                    <div class="col-12 col-md-6">
+                        <img src="../img/img-desarrollo.png" class="col-12" alt="Desarrollo Web Full Stack - Numen">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://api.whatsapp.com/send?phone=+543517054804&text=Hola!" class="float"
+            target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+    <footer>
+        <p>Incorporando WhatsApp</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+}
+
+html body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header .focus {
+  font-weight: bold;
+}
+
+.header .btn-whatsapp {
+  background-color: #25d366;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.header .btn-whatsapp:hover {
+  background-color: #fff;
+  color: #25d366;
+  border: 1px solid #25d366;
+}
+
+/* Lista */
+.detalles {
+  margin: 2em 0;
+}
+
+h2 {
+  padding: .4em;
+  background-color: rgb(233, 233, 233);
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+section li {
+  padding: .4em 1em;
+}
+
+/* Whatsapp - Botón flotante*/
+.float {
+  position: fixed;  
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.float:hover {
+  color: #25d366;
+  background-color: #fff;
+}
+
+/* Whatsapp - Botón form de contacto */
+#form__contacto input[type=submit] {
+    background-color: #25d366;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: rgb(212, 212, 212);
+  text-align: center;
+}
+
+footer p {
+  line-height: 35px;
+  margin: 0;
+}
