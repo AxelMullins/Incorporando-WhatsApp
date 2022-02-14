@@ -20,7 +20,7 @@
     <!-- CDN Fontawesome (Para iconos) -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap v5.1 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -84,9 +84,12 @@
         <section class="detalles">
             <h2>Botón flotante</h2>
             <ol class="bg-light">
-                <li>Abrir <a href="https://vilmanunez.com/crear-enlace-whatsapp/" target="_blank">
-                    <i class="fas fa-link fs-6"></i>
-                    Generador de enlace</a>
+                <li>
+                    Abrir 
+                    <a href="https://vilmanunez.com/crear-enlace-whatsapp/" target="_blank">
+                        <i class="fas fa-link fs-6"></i>
+                        Generador de enlace
+                    </a>
                     <ul>
                         <li><b>Ingresar el número de teléfono</b> (*muy importante el código de país)</li>
                         <li><b>Ingresar el texto predeterminado</b> (*si hacemos click derecho podemos incorporar emojis)</li>
@@ -94,51 +97,55 @@
                         <li>Seleccionar <b>"Copiar enlace"</b></li>
                     </ul>
                 </li>
+
                 <li>Crear la <strong>estructura HTML</strong>
-                    <ul class="list-unstyled bg-dark text-white p-4">
-                        <code>&lt;head&gt;
-                        <li>&lt;!-- CDN Fontawesome (Para iconos) --&gt;</li>
-                        <li>&lt;link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /&gt;</li>
-                        &lt;/head&gt;</code>
-                    </ul>
-                    <ul class="list-unstyled bg-dark text-white p-4">
-                        <code>&lt;body&gt;
-                        <li>
-                            &lt;a href="</code> COPIAR EL LINK GENERADO EN EL PASO 1 <code>"
-                            class="float" target="_blank"&gt;
-                            <ul>
-                                &lt;i class="fab fa-whatsapp"&gt;&lt;/i&gt;
-                            </ul>
-                            &lt;/a&gt;
-                        </li>
-                        &lt;/body&gt;</code>
-                    </ul>
+<code><pre class="bg-dark py-4">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Incorporando WhatsApp&lt;/title&gt;
+
+        &lt;!-- Link css local --&gt;
+        &lt;link rel="stylesheet" href="css/styles.css"&gt;
+
+        &lt;!-- CDN Fontawesome (Para iconos) --&gt;
+        &lt;link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a href=" COPIAR EL LINK GENERADO EN EL PASO 1 " class="float" target="_blank"&gt;
+            &lt;i class="fab fa-whatsapp"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/body&gt;
+</pre></code>
                 </li>
+
                 <li>Dar <strong>estilos con CSS</strong>
-                    <ul class="list-unstyled bg-dark text-white p-4">
-                        <code>.float {
-                        <li>position: fixed;</li>
-                        <li>bottom: 40px;</li>
-                        <li>right: 40px;</li>
-                        <li>width: 60px;</li>
-                        <li>height: 60px;</li>                        
-                        <li>background-color: #25d366;</li>
-                        <li>color: #fff;</li>
-                        <li>border-radius: 50px;</li>
-                        <li>font-size: 30px;</li>
-                        <li>box-shadow: 2px 2px 3px #999;</li>
-                        <li>z-index: 10;</li>
-                        <li>display: grid;</li>
-                        <li>place-items: center;</li>
-                        <li>text-decoration: none;</li>
-                        }</code>
-                    </ul>
-                    <ul class="list-unstyled bg-dark text-white px-4">
-                        <code>.float:hover {
-                        <li>color: #25d366;</li>
-                        <li>background-color: #fff;</li>
-                        }</code>
-                    </ul>
+<code><pre class="bg-dark py-4">
+    .float {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 60px;
+        height: 60px;                       
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 10;
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+    }
+
+    .float:hover {
+        color: #25d366;
+        background-color: #fff;
+    }
+</pre></code>
                 </li>                
             </ol>
         </section>
@@ -148,45 +155,42 @@
             <h2>Formulario de contacto</h2>
             <ol class="bg-light">
                 <li>Crear un <strong>formulario en HTML</strong> (*muy importante que cada input tenga su id)
-                    <ul class="list-unstyled bg-dark text-white p-4">
-                        <code>&lt;form onsubmit="enviarWhatsapp()"&gt;
-                            <li>&lt;input type="text" id="name" placeholder="Nombre"&gt;</li>
-                            <li>&lt;input type="number" id="phone" placeholder="Teléfono"&gt;</li>
-                            <li>&lt;textarea placeholder="Daja tu comentario" id="message"&gt;&lt;/textarea&gt;</li>
-                            <li>&lt;input type="submit" name="submit"
-                                value="Contactar por whatsapp" /&gt;</li>
-                        &lt;/form&gt;</code>
-                    </ul>
+
+<code><pre class="bg-dark py-4">
+    &lt;form onsubmit="enviarWhatsapp()"&gt;
+        &lt;input type="text" id="name" placeholder="Nombre"&gt;
+        &lt;input type="number" id="phone" placeholder="Teléfono"&gt;
+        &lt;textarea placeholder="Daja tu comentario" id="message"&gt;&lt;/textarea&gt;
+        &lt;input type="submit" name="submit" value="Contactar por whatsapp" /&gt;
+    &lt;/form&gt;
+</pre></code>
                 </li>
+
                 <li>Crear <strong>archvio de JavaScript y vincularlo</strong>
-                    <ul class="list-unstyled bg-dark text-white p-4">
-                        <code>&lt;body&gt;
-                        <li>&lt;!-- Incorporar el link del archvio js al final del body --&gt;</li>
-                        <li>&lt;script src="main.js"&gt;&lt;/script&gt;</li>
-                        &lt;/body&gt;</code>
-                    </ul>
+
+<code><pre class="bg-dark py-4">
+    &lt;body&gt;
+
+        &lt;!-- Incorporar el link del archvio js al final del body --&gt;
+        &lt;script src="main.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+</pre></code>
                 </li>
+
                 <li>Crear <strong>código de JavaScript</strong>
-                    <ul class="list-unstyled bg-dark text-white p-4">
-                        <code>function enviarWhatsapp() {
-                        <li>const name = document.getElementById("name").value;</li>
-                        <li>const phone = document.getElementById("phone").value;</li>
-                        <li>const message = document.getElementById("message").value;</li>
-                        <li>const url = "https://api.whatsapp.com/send?phone=+</code> NÚMERO DE WHATSAPP <code>&text=" +</code>
-                            <ul class="list-unstyled bg-dark text-white px-4">
-                                <code>
-                                <li>"Hola" + "%0a%0a" +</li>
-                                <li>"Mi nombre es: " + name + "%0a" +</li>
-                                <li>"Teléfono: " + phone + "%0a" +</li>
-                                <li>message;</li>
-                                </code>
-                            </ul>
-                        </li>
-                        <code>
-                        <li>window.open(url, '_blank').focus();</li>
-                        </code>
-                        <code>}</code>
-                    </ul>                    
+<code><pre class="bg-dark py-4">
+    function enviarWhatsapp() {
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+        const url = "https://api.whatsapp.com/send?phone=+ NÚMERO DE WHATSAPP &text=" +
+                "Hola" + "%0a%0a" +
+                "Mi nombre es: " + name + "%0a" +
+                "Teléfono: " + phone + "%0a" +
+                message;
+        window.open(url, '_blank').focus();
+    }
+</pre></code>                  
                 </li>                
             </ol>
         </section>
@@ -201,6 +205,7 @@
         <p>Incorporando WhatsApp</p>
     </footer>
 
+    <!-- JS Local -->
     <script src="js/main.js"></script>
 
     <!-- Bootstrap JS -->
