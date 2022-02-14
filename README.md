@@ -34,4 +34,4 @@ Cómo incorporar WhatsApp a nuestro sitio web.
 ## Notas 📢
 
 - Creado por [Axel Mullins](https://github.com/eugenia1984) 💻
-- Encontrame en [LinkedIn](https://www.linkedin.com/in/mar%C3%ADaeugeniacosta/)
+- Encontrame en [LinkedIn](https://www.linkedin.com/in/axel-mullins/)
